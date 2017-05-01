@@ -18,7 +18,7 @@
  * Possible values for "force_fast_charge" are :
  *
  *   0 - disabled (default)
- *   1 - increase charge current limit to 900mA
+ *   1 - substitute AC to USB unconditional
 */
 
 #include <linux/kobject.h>
@@ -101,4 +101,5 @@ void force_fast_charge_exit(void)
 
 module_init(force_fast_charge_init);
 module_exit(force_fast_charge_exit);
+
 
